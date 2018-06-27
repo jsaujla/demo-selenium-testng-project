@@ -36,7 +36,7 @@ public class TestNgSeleniumPageObject {
 	@BeforeMethod
 	public void beforeTest() {
 		//**************READ BROWSER, URL INFORMATION FROM PROPERTIES FILE**************
-		propertyFile = loadPropertiesFile(propertyFile, System.getProperty("user.dir") + "/src/test/resources/propertyFile.properties");
+		propertyFile = loadPropertiesFile(propertyFile, System.getProperty("user.dir") + "/src/test/resources/propertiesFile.properties");
 		browserName = propertyFile.getProperty("browser");
 		baseUrl = propertyFile.getProperty("baseUrl");		
 		

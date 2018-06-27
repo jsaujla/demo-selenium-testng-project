@@ -31,7 +31,7 @@ public class TestNgSeleniumAddedPropertiesFile {
 	
 	@BeforeMethod
 	public void beforeTest() {
-		propertyFile = loadPropertiesFile(propertyFile, System.getProperty("user.dir") + "/src/test/resources/propertyFile.properties");
+		propertyFile = loadPropertiesFile(propertyFile, System.getProperty("user.dir") + "/src/test/resources/propertiesFile.properties");
 		browserName = propertyFile.getProperty("browser");
 		baseUrl = propertyFile.getProperty("baseUrl");
     	launchBrowser(browserName);
